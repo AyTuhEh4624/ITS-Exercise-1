@@ -18,6 +18,7 @@
         color: white; 
         font-family: sans-serif; 
         text-align: center;
+        font-weight: 900;
     }
 
     .Bloodyhead{
@@ -25,6 +26,29 @@
         font-family: sans-serif; 
         text-align: center;
     }
+
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        color: white; 
+        font-family: helvetica;
+    }
+
+    th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 20px;
+    }
+    td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 20px;
+    }
+
+    tr:nth-child(odd) {
+    background-color: rgb(12, 12, 12);
+    }
+
 
 </style>
 
@@ -39,11 +63,506 @@
     </header>
 
     <body>
-        <p class="desc">categories:</p>
+        <p class="desc">contents:</p>
         <ul class="desc">
             <li>style ranks</li>
             <li>style bonuses</li>
             <li>modifiers</li>
         </li> <!--this will turn into links later that will move your screen to each category, wikipedia style-->
+        </ul>
+    
+        <h2 class="head"><span style="color: gold; font-style: oblique;">STYLE</span> RANKS</h2>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Color</th>
+                <th>Ordinal Rank</th>
+                <th>Points</th>
+                <th>Decay</th>
+                <th><a href="HardDamageIndex.html" style="color:red">Hard Damage</a> <br> regen multiplier</th>
+            </tr>
+            <tr>
+                <td class="head"><span style="color: rgb(57, 70, 255)">D</span>ESTRUCTIVE</td>
+                <td>blue</td>
+                <td>First</td>
+                <td>200</td>
+                <td>1x</td>
+                <td>1x</td>
+            </tr>
+            <tr>
+                <td class="head"><span style="color: lime">C</span>HAOTIC</td>
+                <td>green</td>
+                <td>Second</td>
+                <td>300</td>
+                <td>1.25x</td>
+                <td>1x</td>
+            </tr>
+            <tr>
+                <td class="head"><span style="color: yellow">B</span>RTUAL</td>
+                <td>yellow</td>
+                <td>third</td>
+                <td>400</td>
+                <td>1.5x</td>
+                <td>1x</td>
+            </tr>
+            <tr>
+                <td class="head"><span style="color: orange">A</span>NARCHIC</td>
+                <td>orange</td>
+                <td>fourth</td>
+                <td>500</td>
+                <td>2x</td>
+                <td>1x</td>
+            </tr>
+            <tr>
+                <td class="head"><span style="color: darkred">S</span>UPREME</td>
+                <td rowspan="3">red</td>
+                <td>fifth</td>
+                <td>700</td>
+                <td>3x</td>
+                <td>2x</td>
+            </tr>
+            <tr>
+                <td class="head"><SPAN Style="color: darkred;">S</SPAN><SPAN Style="color: rgb(216, 0, 0);">S</SPAN>ADISTIC</td>
+                <td>sixth</td>
+                <td>850</td>
+                <td>4x</td>
+                <td>2.5x</td>
+            </tr>
+            <tr>
+                <td class="head"><SPAN Style="color: darkred;">S</SPAN><SPAN Style="color: rgb(216, 0, 0);">S</SPAN><span style="color:red;">S</span>HITSTORM</td>
+                <td>seventh</td>
+                <td>1000</td>
+                <td>6x</td>
+                <td>3x</td>
+            </tr>
+            <tr>
+                <td class="head" style="color: gold; font-style: oblique;">ULTRAKILL</td>
+                <td>gold</td>
+                <td>eighth</td>
+                <td>1500</td>
+                <td>8x</td>
+                <td>instant</td>
+            </tr>
+        </table>
+
+        <BR><BR><BR><BR><BR><BR>
+        
+        <h2 class="head"><span style="color: gold; font-style: oblique;">STYLE</span> BONUSES</h2>
+        <table>
+            <tr>
+            <tr >
+            <th>Name</th>
+            <th>Color</th>
+            <th>Style Points</th>
+            </tr>
+            <td><b>KILL</b>
+            </td>
+            <td>White
+            </td>
+            <td>30 / 45
+            </td>
+            </td></tr>
+            <tr>
+            <td><span style="color:darkorange;"><b>DOUBLE KILL</b></span>
+            </td>
+            <td>Orange
+            </td>
+            <td>25
+            </td></tr>
+            <tr>
+            <td><span style="color:darkorange;"><b>TRIPLE KILL</b></span>
+            </td>
+            <td>Orange
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><span style="color:darkorange;"><b>MULTIKILL</b></span> <b>x(y)</b>
+            </td>
+            <td>Orange
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><b>FRIENDLY FIRE</b>
+            </td>
+            <td>White
+            </td>
+            <td>200 / 250
+            </td></tr>
+            <tr>
+            <td><b>EXPLODED</b>
+            </td>
+            <td>White
+            </td>
+            <td>45
+            </td></tr>
+            <tr>
+            <td><span style="color:lime;"><b>PROJECTILE BOOST</b></span>
+            </td>
+            <td>Green
+            </td>
+            <td>150
+            </td>
+            </tr>
+            <tr>
+            <td><span style="color:aqua;"><b>ARSENAL</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>50
+            </td>></tr>
+            <tr>
+            <td><b>CHARGEBACK</b>
+            </td>
+            <td>White
+            </td>
+            <td>400
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>RICOSHOT</b></span> <b>x(y)</b>
+            </td>
+            <td>Blue
+            </td>
+            <td>50 + (y * 15)
+            </td></tr>
+            <tr>
+            <td><span style="color:darkorange;"><b>ULTRA</b></span><span style="color:aqua;"><b>RICOSHOT</b></span> <b>x(y)</b>
+            </td>
+            <td>Orange+Blue
+            </td>
+            <td>100 + (y * 15)
+            </td></tr>
+            <tr>
+            <td><span style="color:red;"><b>COUNTER</b></span><span style="color:aqua;"><b>RICOSHOT</b></span> <b>x(y)</b>
+            </td>
+            <td>Red+Blue
+            </td>
+            <td>100 + (y * 15)
+            </td></tr>
+            <tr>
+            <td><span style="color:darkorange;"><b>ULTRA</b></span><span style="color:red;"><b>COUNTER</b></span><span style="color:aqua;"><b>RICOSHOT</b></span> <b>x(y)</b>
+            </td>
+            <td>Orange+Red+Blue
+            </td>
+            <td>150 + (y * 15)
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>CONDUCTOR</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>1-90
+            </td></tr>
+            <tr>
+            <td><b>BIG KILL</b>
+            </td>
+            <td>White
+            </td>
+            <td>100 / 125
+            </td></tr>
+            <tr>
+            <td><b>BIG FISTKILL</b>
+            </td>
+            <td>White
+            </td>
+            <td>150
+            </td></tr>
+            <tr>
+            <td><b>BIG HEADSHOT</b>
+            </td>
+            <td>White
+            </td>
+            <td>150
+            </td></tr>
+            <tr>
+            <td><b>GROUND SLAM</b>
+            </td>
+            <td>White
+            </td>
+            <td>60
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>AIR SLAM</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>160
+            </td></tr>
+            <tr>
+            <td><b>HEADSHOT</b>
+            </td>
+            <td>White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>HEADSHOT COMBO</b></span> <b>x(y)</b>
+            </td>
+            <td>Blue
+            </td>
+            <td>20
+            </td></tr>
+            <tr>
+            <td><b>LIMB HIT</b>
+            </td>
+            <td>White
+            </td>
+            <td>60
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>BIPOLAR</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>120
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>ATTRAPTOR</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>60
+            </td></tr>
+            <tr>
+            <td><b>NAILBOMBED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>10 / 120
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>FINISHED OFF</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>QUICKDRAW</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><span style="color:lime;"><b>PARRY</b></span>
+            </td>
+            <td>Green
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><b>FRIED</b>
+            </td>
+            <td>White
+            </td>
+            <td>20
+            </td></tr>
+            <tr>
+            <td><b>CRITICAL PUNCH</b>
+            </td>
+            <td>White
+            </td>
+            <td>40
+            </td></tr>
+            <tr>
+            <td><b>OVERKILL</b>
+            </td>
+            <td>White
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>AIRSHOT</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>FIREWORKS</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>120
+            </td></tr>
+            <tr>
+            <td><b>OUT OF BOUNDS</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><b>DISRESPECT</b>
+            </td>
+            <td>White
+            </td>
+            <td>60
+            </td></tr>
+            <tr>
+            <td><span style="color:red;"><b>ENRAGED</b></span>
+            </td>
+            <td>Red
+            </td>
+            <td>250
+            </td></tr>
+            <tr>
+            <td><b>SHREDDED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>20 / 100
+            </td></tr>
+            <tr>
+            <td><b>MINCED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>20 / 100
+            </td></tr>
+            <tr>
+            <td><b>CRUSHED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>20 / 100
+            </td></tr>
+            <tr>
+            <td><span style="color:lime;"><b>INTERRUPTION</b></span>
+            </td>
+            <td>Green
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><b>FALL</b>
+            </td>
+            <td>White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><b>SPLATTERED</b>
+            </td>
+            <td>White
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>FISTFUL OF DOLLAR</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><span style="color:lime;"><b>INSTAKILL</b></span>
+            </td>
+            <td>Green
+            </td>
+            <td>200
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>DOWN TO SIZE</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>500
+            </td></tr>
+            <tr>
+            <td><b>ZAPPED</b>
+            </td>
+            <td>White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><b>HOMERUN</b>
+            </td>
+            <td>White
+            </td>
+            <td>100
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>CATAPULTED</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>240
+            </td></tr>
+            <tr>
+            <td><b>CANNONBALLED</b>
+            </td>
+            <td>White
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><b>MAURICED</b>
+            </td>
+            <td>White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>HALF OFF</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>50
+            </td></tr>
+            <tr>
+            <td><b>SCRONGLED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><b>ENVIROKILL</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><b>SCRONGBONGLED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><b>SCRINDONGULODED</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>80
+            </td></tr>
+            <tr>
+            <td><b>COMPRESSED</b>
+            </td>
+            <td>White
+            </td>
+            <td>0-50
+            </td></tr>
+            <tr>
+            <td><span style="color:aqua;"><b>SECRET</b></span>
+            </td>
+            <td>Blue
+            </td>
+            <td>0
+            </td></tr>
+            <tr>
+            <td><b>why are you even spawning enemies here</b>
+            </td>
+            <td>Gray / White
+            </td>
+            <td>80
+            </td></tr>
+        </table>
+
     </body>
 </html>

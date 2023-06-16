@@ -9,10 +9,23 @@
     }
 
     .desc {
-    margin-left: 45%;
-    color: white; 
-    font-family: helvetica;
+        color: white; 
+        font-family: helvetica;
+        text-align:center;
     }
+
+    .catalign {
+        display: inline-block;
+        text-align: left; 
+    }
+
+    .ulalign {
+        display: inline-block;
+        text-align: left; 
+        list-style-type: none;
+    }
+
+
 
     .head{
         color: white; 
@@ -24,6 +37,13 @@
         color: red; 
         font-family: sans-serif; 
         text-align: center;
+    }
+
+    .indexheader{
+        color:#ff0000; 
+        font-size:120%; 
+        font-weight:bold; 
+        text-align:center; 
     }
 
 </style>
@@ -39,16 +59,81 @@
     </header>
 
     <body>
-        <p class="desc">categories:</p>
-        <ul class="desc">
-            <li>Info</li>
-            <li>Revolvers</li>
-            <li>Shotguns</li>
-            <li>Nailguns</li>
-            <li>Railcannons</li>
-            <li>Rocket launchers</li>
-            <li>Arms</li>
-            <li>Alternates</li>
-        </li> <!--this will turn into links later that will move your screen to each category, wikipedia style-->
+        <div class="desc">
+            <p class>categories:</p>
+            <ul class="catalign">
+                <li>Info</li>
+                <li>Revolvers</li>
+                <li>Shotguns</li>
+                <li>Nailguns</li>
+                <li>Railcannons</li>
+                <li>Rocket launchers</li>
+                <li>Arms</li>
+                <li>Alternates</li>
+            </ul>
+        </div>
+
+
+        <h2 class = "indexheader"><a href="">EVOLVERS</a></h2>
+        <div class="desc">
+            <ul class="ulalign">
+                <li style="color:aqua;">PIERCER VARIANT</a></li>
+                <li style="color:lightgreen;">MARKSMAN VARIANT</a></li>
+                <li style="color:red">SHARPSHOOTER VARIANT</a></li>
+            </ul>
+        </div>
+        
+
+        <h2 class = "indexheader"><a href=""></a>SHOTGUNS</h2>
+        <div class="desc">
+            <ul class="ulalign">
+                <li style="color:aqua;">CORE EJECT VARIANT</a></li>
+                <li style="color:lightgreen;">PUMP CHARGE VARIANT</a></li>
+            </ul>
+        </div>
+
+        <h2 class = "indexheader"><a href=""></a>NAILGUNS</h2>
+        <div class="desc">
+            <ul class="ulalign">
+                <li style="color:aqua;">ATTRACTOR VARIANT</a></li>
+                <li style="color:lightgreen;">OVERHEAT VARIANT</a></li>
+            </ul>
+        </div>
+
+        <h2 class = "indexheader"><a href=""></a>RAILCANNONS</h2>
+        <div class="desc">
+            <ul class="ulalign">
+                <li style="color:aqua;">ELECTRIC VARIANT</a></li>
+                <li style="color:lightgreen;">SCREWDRIVER VARIANT</a></li>
+                <li style="color:red;">MALICIOUS VARIANT</a></li>
+            </ul>
+        </div>
+
+        <h2 class = "indexheader"><a href=""></a>ROCKET LAUNCHERS</a></h2>
+        <div class="desc">
+            <ul class="ulalign">
+                <li style="color:aqua;">FREEZEFRAME VARIANT</a></li>
+                <li style="color:lightgreen;">S.R.S CANNON VARIANT</a></li>
+            </ul>
+        </div>
+
+        <h2 class = "indexheader"><a href="">ARMS</a></h2>
+        <div class="desc">ZZ
+            <ul class="ulalign">
+                <li style="color:aqua;">FEEDBACKER VARIANT</a></li>
+                <li style="color:lightgreen;">KNUCKLEBLASTER VARIANT</a></li>
+                <li style="color:red;">WHIPLASH VARIANT</a></li>
+            </ul>
+        </div>
+
+        <h2 class = "indexheader" style="color: gold;">A L T E R N A T E S</h2>
+        <div class="desc">
+            <ul class="ulalign">
+                <li style="color:gold;">SLAB REVOLVER VARIANT</a></li>
+                <li style="color:gold;">SAWBLADE NAILGUN VARIANT</a></li>
+            </ul>
+        </div>
+
     </body>
 </html>
+
